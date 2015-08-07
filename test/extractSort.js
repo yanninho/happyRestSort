@@ -4,7 +4,7 @@ var express = require('express')
 
 var app = express();
 
-app.use(extractSort());
+app.use(extractSort.extractSort);
 
 app.use(function(req, res, next){
   res.end(JSON.stringify(req.happyRest.sort));

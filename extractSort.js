@@ -5,8 +5,8 @@
 **/
 var _ = require('underscore');
 
-module.exports = function() {
-  return function extractSort(req, res, next) {
+module.exports = {
+   extractSort: function(req, res, next) {
     if (!req.happyRest) req.happyRest = {};
     if (req.happyRest.sort) return next();
 
@@ -29,5 +29,5 @@ module.exports = function() {
 		}
 	}
     next();
-  };
+  }
 };
