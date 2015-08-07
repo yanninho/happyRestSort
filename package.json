@@ -1,0 +1,27 @@
+{
+  "name": "happyrestsort",
+  "version": "1.0.0",
+  "description": "Express middleware to extract sort(asc/desc) from request",
+  "main": "extractSort.js",
+  "scripts": {
+    "test": "mocha --ui bdd --reporter list -- test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanninho/happyRestSort.git"
+  },
+  "author": "Yannick Saint Martino <y4nn5m@gmail.com> (http://yannick-saintmartino.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanninho/happyRestSort/issues"
+  },
+  "homepage": "https://github.com/yanninho/happyRestSort#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "express": "^4.13.3",
+    "mocha": "^2.2.5",
+    "supertest": "^1.0.1"
+  }
+}
